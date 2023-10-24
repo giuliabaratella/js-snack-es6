@@ -9,20 +9,30 @@
 const TavoloVip = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
 
 // creo un nuovo array che conterrà gli oggetti
-const listToPrint = [];
+// const listToPrint = [];
 // con un ciclo forEach
 // ad ogni ciclo prendo il nome e l'indice dal vecchio array e li inserisco in un nuovo oggetto
 // pusho il nuovo oggetto nel nuovo array
-TavoloVip.forEach((el,index)=>{
+// TavoloVip.forEach((el,index)=>{
+//     let invitato = {};
+//     invitato.tableName = 'TavoloVip';
+//     invitato.guestName = el;
+//     invitato.place = index + 1;
+//     listToPrint.push(invitato);
+// })
+
+
+// soluzione con ciclo map 
+const listToPrint = TavoloVip.map((el,index)=>{
     let invitato = {};
     invitato.tableName = 'TavoloVip';
     invitato.guestName = el;
     invitato.place = index + 1;
-    listToPrint.push(invitato);
+    return invitato;
 })
+
 // stampo la lista con gli oggetti 
 console.log(listToPrint);
-
 
 
 
