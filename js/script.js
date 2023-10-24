@@ -108,3 +108,8 @@ const highGrades = students.filter((el)=>{
 })
 console.log(highGrades);
 
+// array voti superiori a 70 e id > 120 
+const highId = highGrades.filter ((el)=> {
+    return el.id > 120;
+})
+console.log(highId);
