@@ -23,4 +23,15 @@ Id  Name                Grades <br>
 145 Gaia Borromini          74 <br>
 196 Luigi Grimaldello       68 <br>
 102 Piero della Francesca   50 <br>
-120 Francesca da Polenta    84
+120 Francesca da Polenta    84 <br>
+ <br>
+SNACK 3 <br>
+Creare un array di oggetti: <br>
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso. <br>
+Stampare in console la bici con peso minore utilizzando destructuring e template literal <br>
+ <br>
+SNACK 4 <br>
+Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti. <br>
+Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0. <br>
+Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti. <br>
+Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
