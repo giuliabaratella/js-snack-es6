@@ -212,6 +212,15 @@ teams.forEach((el)=> {
 })
 console.log (teams);
 
+const teamsNameFouls = teams.map((el)=>{
+    const {name, fouls} = el;
+    const obj = {
+        name,
+        fouls
+    }
+    return obj
+})
+console.log(teamsNameFouls);
 
 // UTILITY 
 function getRndInteger(min, max) {
