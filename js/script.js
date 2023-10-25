@@ -113,3 +113,51 @@ const highId = highGrades.filter ((el)=> {
     return el.id > 120;
 })
 console.log(highId);
+
+// SNACK 3
+// Creare un array di oggetti:
+// Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+// Stampare in console la bici con peso minore utilizzando destructuring e template literal
+
+const bycicles = [
+    {
+        name: 'bikeA',
+        weight: 6
+    },
+    {
+        name: 'bikeB',
+        weight: 7
+    },
+    {
+        name: 'bikeC',
+        weight: 10
+    },
+    {
+        name: 'bikeD',
+        weight: 12
+    },
+    {
+        name: 'bikeE',
+        weight: 5
+    },
+    {
+        name: 'bikeF',
+        weight: 8
+    },
+    {
+        name: 'bikeG',
+        weight: 4
+    }
+]
+
+let minWeightBike;
+bycicles.forEach((el,index)=>{
+    if (index === 0){
+        minWeightBike = el;
+    }else if (minWeightBike.weight > el.weight){
+        minWeightBike = el;
+    }
+})
+console.log(minWeightBike);
+
+console.log(`La bici con il peso minore è ${minWeightBike.name}`)
