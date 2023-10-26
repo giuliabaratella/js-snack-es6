@@ -160,9 +160,9 @@ bycicles.forEach((el,index)=>{
 })
 console.log(minWeightBike);
 
-const {name} = minWeightBike;
+const {name, weight} = minWeightBike;
 
-console.log(`La bici con il peso minore è ${name}`)
+console.log(`La bici con il peso minore è ${name} e il suo peso è ${weight}`);
 
 
 // SNACK 4
